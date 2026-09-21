@@ -2,14 +2,10 @@
 API pública de dados abertos — Escola Dalva Pontes da Rocha
 CC0464 - Interfaces de Programação de Aplicação (UFC, 2026.2)
 
-Escopo (conforme Campo 3 do plano de ação):
+Escopo:
   - Devolve matrículas, infraestrutura e desempenho médio por turma
   - NÃO inclui: dados individuais por aluno, comparação com outras
     escolas/município, série histórica ou painel visual.
-
-Como rodar:
-  pip install -r requirements.txt
-  uvicorn main:app --reload
 
 Documentação interativa gerada automaticamente em:
   http://127.0.0.1:8000/docs
@@ -35,7 +31,6 @@ app = FastAPI(
 
 @app.get("/", include_in_schema=False)
 def raiz():
-    # Redireciona a raiz para a documentação interativa
     return RedirectResponse(url="/docs")
 
 
@@ -46,12 +41,6 @@ def raiz():
     summary="Retorna os dados de matrículas da escola",
 )
 def obter_matriculas():
-    """
-    Retorna o total de alunos matriculados no ano letivo vigente,
-    separado por etapa de ensino.
-
-    Fonte: Prefeitura de Caucaia (licença de uso em verificação).
-    """
     return data.MATRICULAS
 
 
