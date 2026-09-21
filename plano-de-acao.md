@@ -34,56 +34,58 @@ será entregue o link para o gestor e ele utilizará para fazer as análises nec
 ## Campo 3 — Trilha e produto
 
 - **O que é, em uma frase que caiba num tuíte, e onde ficará publicado:**
-Uma API pública que devolve, para a escola [nome], dados de matrículas e infraestrutura do censo escolar mais recente, com documentação e exemplo pronto para copiar, publicada em [endereço do repositório/link].
+Uma API pública que devolve, para a escola Dalva Pontes da Rocha, dados de matrículas, infraestrutura e desempenho médio por turma nas avaliações mais recentes, com documentação e exemplo pronto para copiar, publicada em (https://github.com/Wyrfiz/API-school-management).
 
 - **O que NÃO faz parte:**
-Não inclui análise comparativa com outras escolas ou média do município, não inclui série histórica de anos anteriores, e não inclui painel visual (dashboard) — apenas os dados estruturados via API.
+Não inclui dados individuais por aluno, não inclui comparação com outras escolas ou com a média do município, não inclui série histórica de anos anteriores, e não inclui painel visual (dashboard).
 
 ## Campo 4 — Fontes de dados
 
-Uma tabela por fonte.
+| Nome e órgão      | Prefeitura de Caucaia                                      |
+|--------------------|--------------------------------------------------------------|
+| Endereço           | https://www.caucaia.ce.gov.br/                               |
+| Licença            | A verificar                                                   |
+| Atualização        | [periodicidade declarada] / [data do dado mais recente]      |
+| Dado pessoal?      | Não (matrículas e infraestrutura são dados agregados da escola) |
 
-| | |
-| :-- | :-- |
-| Nome e órgão | |
-| Endereço | |
-| Licença — e o que ela permite ao nosso produto | |
-| Atualização — periodicidade declarada e data do dado mais recente | |
-| Dado pessoal? — se sim, granularidade e o que será agregado | |
-
+| Nome e órgão      | Escola Dalva Pontes da Rocha (avaliações internas)            |
+|--------------------|-----------------------------------------------------------------|
+| Endereço           | [como será acessado — planilha interna? sistema da escola?]     |
+| Licença            | A verificar (autorização já obtida das coordenadoras)           |
+| Atualização        | [periodicidade das avaliações — bimestral? por avaliação?]      |
+| Dado pessoal?      | Não diretamente — dados agregados por turma (sem identificação individual de aluno) |
 ## Campo 5 — Papéis
 
 Um por integrante, com responsabilidade verificável. Quando um papel girar, registre no diário.
 
-| Integrante | Papel | O que fica sob sua responsabilidade |
-| :-- | :-- | :-- |
-| | | |
-| | | |
-| | | |
+Kayo - 493552, resolverei a questão burocrática com a escola e a construção da API
 
 ## Campo 6 — Cronograma
 
-Uma frase por marco, dizendo o que estará pronto. Nada de "avançar no projeto".
+**02/10 (Marco 1):** Plano de ação finalizado, repositório criado, licença dos dados da Prefeitura de Caucaia confirmada e primeiro contato para obtenção dos dados de matrícula/infraestrutura realizado.
 
-| Data | O que estará pronto |
-| :-- | :-- |
-| 02/10 (Marco 1) | |
-| 13/11 (Marco 2) | |
-| 27/11 (Marco 3) | |
-| 04/12 (Socialização) | |
+**13/11 (Marco 2):** Dados de matrícula, infraestrutura e avaliações por turma obtidos e tratados; API funcional entregando os três tipos de dado com documentação básica.
 
-**Dependências externas.** O que depende de terceiro (cadastro, chave de acesso, autorização,
-resposta de parceiro) e o que fazemos se falhar. Faça *esta semana* o pedido que demora.
+**27/11 (Marco 3):** API revisada, exemplos de uso testados, documentação completa; validação com o gestor da escola sobre a utilidade real dos dados entregues.
+
+**04/12 (Socialização):** Apresentação da API e dos resultados, com feedback registrado das coordenadoras/gestor.
+
+**Dependências externas:**
+- Confirmação da licença de uso dos dados da Prefeitura de Caucaia (site: caucaia.ce.gov.br) — pedido a ser feito esta semana. Se negada/demorada, usar apenas dados públicos já abertos no portal, sem dados sob solicitação.
+- Acesso às avaliações internas da escola — autorização já obtida com Isabel e Kátia, falta a extração dos dados em si. Se atrasar, usar avaliação mais antiga disponível como piloto.
 
 ## Campo 7 — Indicadores
 
 Defina agora, antes de executar. Indicador sem instrumento de coleta é intenção. Cada coleta vira
 depois uma linha do `evidencias.csv`.
 
-| | Medida | Como será coletada | Valor que seria bom |
-| :-- | :-- | :-- | :-- |
-| Contagem | | | |
-| Qualitativa | | | |
+## Campo 7 — Indicadores
+
+| Medida | Como será coletada | Valor que seria bom |
+|---|---|---|
+| Quantidade | Nº de endpoints da API funcionando corretamente | 3 (matrículas, infraestrutura, desempenho por turma) |
+| Quantidade | Nº de requisições de teste realizadas pelo gestor/coordenadoras | ≥ 5 até o Marco 3 |
+| Qualitativa | Feedback do gestor sobre utilidade dos dados entregues (entrevista curta) | Gestor confirma que os dados ajudam na análise pretendida |
 
 ## Antes de entregar: a prova dos nove
 
