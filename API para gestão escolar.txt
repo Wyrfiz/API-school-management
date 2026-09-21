@@ -1,0 +1,15 @@
+API para gestão escolar
+
+Kayo -  4 horas dedicada, durante a semana.
+
+Semana 1 dia 14/09 - 18/09
+
+Inicio do projeto, entrei em contato com a coordenadoria e com a diretoria da escola municipal de Caucaia, Dalva Pontes da Rocha, para verificar a possibilidade da criação de uma API que possa os auxiliar com a gestão. 
+em conversa com a escola vi que ainda fazem muitas análises com planilhas feitas em word e listagens impressas.
+-------
+estou fazendo ajustes nos códigos para que possa ter uma base, ainda não tive resposta da instituição, mas não tem problema tentaremos com outras instituições caso seja negado
+-------
+Com ajuda de dentro do colégio tive um sinal positivo para criar a API, já solicitei as informações necessárias para continuar o projeto.
+-------
+fazendo ajustes no código dado que ainda não tenho costume com essa linha de raciocínio estou tendo dificuldades, porém, estou confiante que vai dar certo
+obs: ainda aguardando os dados do colégio.
